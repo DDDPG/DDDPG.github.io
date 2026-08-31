@@ -1,0 +1,92 @@
+{% assign pr = include.project %}
+<article class="project-card">
+  <span class="scanline" aria-hidden="true"></span>
+  <div class="proj-shot" aria-hidden="true">
+    {% if pr.shot == 'vscode' %}
+    <div class="shot shot--vscode">
+      <div class="shot-titlebar"><i></i><i></i><i></i><span>preview — vocal_44.1k.wav</span></div>
+      <div class="shot-editor">
+        <div class="js-bars" data-seed="{{ pr.seed | default: 7 }}"></div>
+        <div class="shot-spec"></div>
+      </div>
+    </div>
+    {% elsif pr.shot == 'rpp' %}
+    <div class="shot shot--rpp">
+      <div class="shot-toolbar"><i></i><i></i><i></i><span>mix.rpp — REAPER project</span></div>
+      <pre>&lt;<span class="c-key">REAPER_PROJECT</span> <span class="c-str">"mix.rpp"</span> <span class="c-num">0.1</span>
+<span class="c-dim">│ </span>&lt;<span class="c-key">TRACK</span>
+<span class="c-dim">│ │ </span><span class="c-key">NAME</span> <span class="c-str">"Vocal Lead"</span>
+<span class="c-dim">│ │ </span><span class="c-key">VOLPAN</span> <span class="c-num">1.0 0.0 -1.0 -1.0</span>
+<span class="c-dim">│ │ </span><span class="c-key">FXCHAIN</span>
+<span class="c-dim">│ │ │ </span><span class="c-key">WAK</span> <span class="c-num">0</span>
+<span class="c-dim">│ │ </span>&lt;<span class="c-key">ITEM</span>
+<span class="c-dim">│ │ │ </span><span class="c-key">POSITION</span> <span class="c-num">0.0</span>
+<span class="c-dim">│ │ │ </span><span class="c-key">LENGTH</span> <span class="c-num">4.32</span>
+<span class="c-dim">│ │ │ </span><span class="c-key">SOFFS</span> <span class="c-num">1.17</span>
+<span class="c-dim">│ │ │ </span><span class="c-key">SOURCE</span> <span class="c-str">"vocal.wav"</span>
+<span class="c-dim">│ │ </span>&gt;
+<span class="c-dim">│ </span>&gt;
+&gt;</pre>
+    </div>
+    {% elsif pr.shot == 'codec' %}
+    <div class="shot shot--codec">
+      <div class="shot-spec-lg"></div>
+      <span class="shot-axis">44.1 kHz · stereo · continuous latent</span>
+    </div>
+    {% elsif pr.shot == 'image' %}
+    <div class="shot shot--image">
+      <img src="{{ pr.image | relative_url }}" alt="" loading="lazy" decoding="async">
+    </div>
+    {% elsif pr.shot == 'eq' %}
+    <div class="shot shot--eq">
+      <div class="eq-panel" aria-hidden="true">
+        <div class="eq-sidebar">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="eq-main">
+          <div class="eq-curve"></div>
+          <div class="eq-freq"><i>20</i><i>200</i><i>2k</i><i>20k</i></div>
+          <div class="eq-knobs">
+            <span class="eq-knob"></span><span class="eq-knob"></span><span class="eq-knob"></span><span class="eq-knob"></span><span class="eq-knob"></span><span class="eq-knob"></span><span class="eq-knob"></span>
+          </div>
+        </div>
+      </div>
+      <span class="shot-axis">Parametric EQ · UI Kit</span>
+    </div>
+    {% endif %}
+  </div>
+  <div class="proj-head">
+    <span class="proj-icon" aria-hidden="true">
+      {% if pr.icon == 'waveform' %}
+      <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2.5 11.5v-3M5.5 13.5v-7M8.5 15.5v-11M11.5 13.5v-7M14.5 11.5v-3M17.5 13v-6"/></svg>
+      {% elsif pr.icon == 'braces' %}
+      <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M7 3c-2 0-2.5 1.2-2.5 2.7 0 1.5-.4 2.5-2 2.8 1.6.3 2 1.3 2 2.8C4.5 15.8 5 17 7 17M13 3c2 0 2.5 1.2 2.5 2.7 0 1.5.4 2.5 2 2.8-1.6.3-2 1.3-2 2.8 0 1.5-.5 2.7-2.5 2.7"/></svg>
+      {% elsif pr.icon == 'codec' %}
+      <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 10h2V6h2v8h2V8h2v6h2V5h2v9h2v-4"/></svg>
+      {% elsif pr.icon == 'eq' %}
+      <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <line x1="4.5" y1="3" x2="4.5" y2="17"/><line x1="10" y1="5" x2="10" y2="17"/><line x1="15.5" y1="2" x2="15.5" y2="17"/>
+        <circle cx="4.5" cy="10" r="2" fill="currentColor" stroke="none"/>
+        <circle cx="10" cy="12" r="2" fill="currentColor" stroke="none"/>
+        <circle cx="15.5" cy="8" r="2" fill="currentColor" stroke="none"/>
+      </svg>
+      {% endif %}
+    </span>
+    <div class="proj-id">
+      <h3 class="proj-name">{{ pr.name }}</h3>
+    </div>
+    <span class="proj-status"><span class="status-dot{% if pr.status_live %} status-dot--live{% endif %}"></span>{{ pr.status }}</span>
+  </div>
+  <p class="proj-type">{{ pr.type }}</p>
+  <p class="proj-desc">{{ pr.desc }}</p>
+  <div class="tag-row">
+    {% for t in pr.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+  </div>
+  <div class="proj-links">
+    {% if pr.links.size > 0 %}
+    {% for l in pr.links %}<a class="u-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+    {% else %}
+    <span class="proj-links--pending">No public release yet</span>
+    {% endif %}
+  </div>
+</article>

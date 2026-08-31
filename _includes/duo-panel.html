@@ -1,0 +1,20 @@
+{% assign duo = site.data.profile.duo %}
+<div class="duo">
+  <div class="duo-side">
+    <h3 class="duo-name">{{ duo.personal.name }}</h3>
+    <span class="duo-role">{{ duo.personal.role }}</span>
+    <p class="duo-desc">{{ duo.personal.desc }}</p>
+    <ul class="duo-list">
+      {% for item in duo.personal.items %}<li>{{ item }}</li>{% endfor %}
+      {% for item in duo.personal.items_lab %}<li class="duo-list--lab">{{ item }}</li>{% endfor %}
+    </ul>
+    <a class="duo-link u-link" href="{{ duo.personal.url }}">github.com/DDDPG</a>
+  </div>
+  <div class="duo-side">
+    <h3 class="duo-name">{{ duo.lab.name }}</h3>
+    <span class="duo-role">{{ duo.lab.role }}</span>
+    <p class="duo-desc">{{ duo.lab.desc }}</p>
+    <p class="duo-mission">“{{ duo.lab.mission }}”</p>
+    <a class="duo-link u-link" href="{{ duo.lab.url }}">github.com/Eps-Acoustic-Revolution-Lab</a>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+# Signal Log — newest first. `text_html` may contain inline links/emphasis.
+
+- date: "2026.08"
+  text_html: "<em>ear-VAE2</em> — <a href=\"https://arxiv.org/abs/2608.19843\">Fourier is Frontier</a> is now on arXiv."
+
+- date: "2026.07"
+  text_html: "<a href=\"https://arxiv.org/abs/2607.11699\">Qwen-Music technical report</a> released — large-scale unified music generation."
+
+- date: "2026.07"
+  text_html: "<a href=\"https://arxiv.org/abs/2511.20224\">DUO-TOK</a> and <a href=\"https://cinedub2026.github.io/\">CineDub</a> accepted to ACM Multimedia 2026."
+
+- date: "2026.06"
+  text_html: "<a href=\"https://arxiv.org/abs/2509.14912\"><em>εar-VAE</em></a> accepted to INTERSPEECH 2026 — perceptually driven high-fidelity music reconstruction."
+
+- date: "2026.03"
+  text_html: >-
+    Joined <strong>Qwen Omni</strong> foundation team as intern — music generation decoder
+    work, agentic post-training for general audio agents, and audio-quality annotation
+    standards plus data-pipeline filtering for training curation.

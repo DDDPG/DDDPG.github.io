@@ -1,0 +1,109 @@
+---
+layout: default
+title: Kangdi Wang — Independent Audio AI Researcher & Builder
+description: Independent Audio AI researcher and builder — now interning with the Qwen Team. Neural audio representations, generative music modeling, and high-fidelity sound synthesis.
+---
+
+{% assign profile = site.data.profile %}
+{% assign papers = site.data.papers | sort: 'order' %}
+{% assign n_repr = site.data.papers | where_exp: 'p', "p.topics contains 'repr'" | size %}
+{% assign n_gen = site.data.papers | where_exp: 'p', "p.topics contains 'gen'" | size %}
+{% assign n_mm = site.data.papers | where_exp: 'p', "p.topics contains 'mm'" | size %}
+
+<!-- ============ HERO + CAREER TRAJECTORY ============ -->
+<section class="hero" id="chain">
+  <div class="wrap">
+    {% include spectrogram-band.html %}
+    <div class="hero-id" data-reveal style="--d:.08s">
+      <img class="hero-avatar" src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="Portrait of Kangdi Wang" width="84" height="84">
+      <div class="hero-id-text">
+        <h1 class="hero-name">
+          {{ profile.name }}{% if profile.alias %}<span class="hero-alias"> ({{ profile.alias }})</span>{% endif %}
+        </h1>
+        <p class="hero-role">{% include profile-role.html %}</p>
+      </div>
+    </div>
+    <p class="hero-keywords" data-reveal style="--d:.18s">{{ profile.pillars }}</p>
+    <div class="hero-split" data-reveal style="--d:.28s">
+      <div class="hero-intro">
+        <p class="hero-bio">{{ profile.bio_short }}</p>
+        <p class="hero-tagline">{{ profile.tagline }}</p>
+        <div class="hero-links">
+          <a class="u-link" href="mailto:{{ profile.email }}">{{ profile.email }}</a>
+          <a class="u-link" href="{{ profile.links.github }}">GitHub · DDDPG</a>
+          <a class="u-link" href="{{ profile.links.lab }}">εar-LAB</a>
+          <a class="u-link" href="{{ profile.links.scholar }}">Google Scholar</a>
+          {% if profile.affiliation_now %}<span class="hero-affiliation">{{ profile.affiliation_now }}</span>{% endif %}
+        </div>
+      </div>
+      <aside class="hero-traj" aria-label="Career trajectory">
+        {% include trajectory-stream.html variant='hero' %}
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNAL LOG ============ -->
+<section class="spec-section" id="log">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">01</span>
+      <span class="rail-label">Signal Log</span>
+    </aside>
+    <div class="spec-body">
+      {% include signal-log.html limit=4 %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTED RESEARCH ============ -->
+<section class="spec-section" id="works">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">02</span>
+      <span class="rail-label">Selected<br>Research</span>
+    </aside>
+    <div class="spec-body">
+      <div class="carousel" data-carousel>
+        <div class="carousel-head">
+          <div class="carousel-filters" role="tablist" aria-label="Filter papers by topic">
+            <button class="carousel-filter is-active" data-filter="all" role="tab" aria-selected="true">All <span class="carousel-count">{{ site.data.papers | size }}</span></button>
+            <button class="carousel-filter" data-filter="repr" role="tab" aria-selected="false">Neural Representation <span class="carousel-count">{{ n_repr }}</span></button>
+            <button class="carousel-filter" data-filter="gen" role="tab" aria-selected="false">Music Generation <span class="carousel-count">{{ n_gen }}</span></button>
+            <button class="carousel-filter" data-filter="mm" role="tab" aria-selected="false">Multimodal Audio <span class="carousel-count">{{ n_mm }}</span></button>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-btn" data-carousel-prev aria-label="Scroll papers left">←</button>
+            <button class="carousel-btn" data-carousel-next aria-label="Scroll papers right">→</button>
+          </div>
+        </div>
+        <div class="carousel-rail" tabindex="0" aria-label="Paper cards — horizontally scrollable">
+          {% for paper in papers %}
+          {% include paper-card.html paper=paper %}
+          {% endfor %}
+        </div>
+      </div>
+      <p class="section-outlet"><a class="u-link" href="{{ '/publications/' | relative_url }}">Full publication list →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPEN SOURCE PROJECTS ============ -->
+<section class="spec-section" id="projects">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">03</span>
+      <span class="rail-label">Open Source<br>Projects</span>
+    </aside>
+    <div class="spec-body">
+      <div class="carousel" data-carousel>
+        <div class="carousel-rail" tabindex="0" aria-label="Open source project cards — horizontally scrollable">
+          {% for project in site.data.projects %}
+          {% include project-card.html project=project %}
+          {% endfor %}
+        </div>
+      </div>
+      <p class="section-outlet"><a class="u-link" href="{{ '/projects/' | relative_url }}">All tools &amp; projects →</a></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+---
+layout: default
+title: Publications
+description: Publications of Kangdi Wang — neural audio representation, music generation, and multimodal audio. Full list also on Google Scholar.
+permalink: /publications/
+---
+
+{% assign years = site.data.papers | map: 'year' | uniq | sort | reverse %}
+
+{% include page-head.html kicker="Publications" title="Writings & papers." lede="Author roles are stated exactly as on the official author lists." %}
+
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">01</span>
+      <span class="rail-label">Complete<br>List</span>
+    </aside>
+    <div class="spec-body">
+      {% for year in years %}
+      <div class="pub-year">
+        <span class="pub-year-label">{{ year }}</span>
+        {% assign in_year = site.data.papers | where: 'year', year | sort: 'date' | reverse %}
+        {% for p in in_year %}
+        <article class="pub-entry">
+          <div class="pub-meta">
+            <b>{{ p.date }} · {{ p.venue_short }}</b>
+            {{ p.area }}
+          </div>
+          <div class="pub-content">
+            <div class="chip-row">
+              <span class="chip{% if p.lead %} chip--lead{% endif %}">{{ p.role }}</span>
+              {% if p.alias %}<span class="chip">{{ p.alias }}</span>{% endif %}
+            </div>
+            <h3 class="pub-title">{{ p.title }}</h3>
+            <p class="pub-caption">{{ p.caption }}</p>
+            <div class="work-links">
+              {% if p.arxiv %}<a class="u-link" href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}
+              {% if p.code %}<a class="u-link" href="{{ p.code }}">Code</a>{% endif %}
+              {% if p.project %}<a class="u-link" href="{{ p.project }}">Project</a>{% endif %}
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <p class="section-outlet"><a class="u-link" href="{{ site.data.profile.links.scholar }}">Full list on Google Scholar</a></p>
+    </div>
+  </div>
+</section>

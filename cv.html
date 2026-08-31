@@ -1,0 +1,107 @@
+---
+layout: default
+title: CV
+description: Curriculum vitae of Kangdi Wang — independent Audio AI researcher & builder. Contact, experience, publications, education, community, and capabilities.
+permalink: /cv/
+---
+
+{% assign papers = site.data.papers | sort: 'date' | reverse %}
+{% assign profile = site.data.profile %}
+
+{% include page-head.html kicker="Curriculum Vitae" title="Trajectory & capabilities." lede="An independent research practice across neural audio representation, generative music, and multimodal audio — grounded in mix engineering and industry internships." %}
+
+<!-- ============ CONTACT ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">01</span>
+      <span class="rail-label">Contact</span>
+    </aside>
+    <div class="spec-body">
+      <div class="mono-row">
+        <span class="mono"><b>Email</b> — <a class="u-link" href="mailto:{{ profile.email }}">{{ profile.email }}</a></span>
+        <span class="mono"><b>GitHub</b> — <a class="u-link" href="{{ profile.links.github }}">DDDPG</a></span>
+        <span class="mono"><b>Lab</b> — <a class="u-link" href="{{ profile.links.lab }}">εar-LAB</a></span>
+        <span class="mono"><b>Scholar</b> — <a class="u-link" href="{{ profile.links.scholar }}">Profile</a></span>
+      </div>
+      <p class="cv-contact-role">{% include profile-role.html %}</p>
+      {% if profile.affiliation_now %}<p class="cv-contact-affil">{{ profile.affiliation_now }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">02</span>
+      <span class="rail-label">Experience</span>
+    </aside>
+    <div class="spec-body">
+      {% include cv-experience.html %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">03</span>
+      <span class="rail-label">Publications</span>
+    </aside>
+    <div class="spec-body">
+      <ul class="cv-pub-list">
+        {% for p in papers %}
+        <li class="cv-pub">
+          <span class="log-date">{{ p.date }}</span>
+          <div class="cv-pub-body">
+            <span class="cv-pub-title">{{ p.title }}</span>
+            <span class="cv-pub-meta">{{ p.venue }} · {{ p.role }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="section-outlet"><a class="u-link" href="{{ '/publications/' | relative_url }}">Publication details →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">04</span>
+      <span class="rail-label">Education</span>
+    </aside>
+    <div class="spec-body">
+      {% include cv-education.html %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">05</span>
+      <span class="rail-label">Community<br>&amp; Practice</span>
+    </aside>
+    <div class="spec-body">
+      {% include cv-community.html %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">06</span>
+      <span class="rail-label">Capabilities</span>
+    </aside>
+    <div class="spec-body">
+      {% include skills.html %}
+    </div>
+  </div>
+</section>

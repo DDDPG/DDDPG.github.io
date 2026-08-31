@@ -1,0 +1,10 @@
+<ul class="cv-community-list">
+  {% for item in site.data.community %}
+  <li class="cv-community">
+    <span class="cv-community-title">
+      {% if item.title_url %}<a class="u-link" href="{{ item.title_url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+    </span>
+    <span class="cv-community-desc">{{ item.desc }}</span>
+  </li>
+  {% endfor %}
+</ul>

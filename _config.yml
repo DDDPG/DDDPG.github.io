@@ -1,0 +1,55 @@
+# Kangdi Wang — personal site (Audible Archive)
+# Jekyll 4.x, built & deployed via GitHub Actions (.github/workflows/deploy.yml)
+
+title: Kangdi Wang
+description: >-
+  Independent Audio AI researcher and builder — now interning with the Qwen Team.
+  Neural audio representations, generative music modeling, and high-fidelity sound synthesis.
+tagline: People always talk the talk, but not walk the walk.
+url: "https://dddpg.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: Kangdi Wang
+  email: wangkangdi21@gmail.com
+
+email: wangkangdi21@gmail.com
+github_username: DDDPG
+lab_github_org: Eps-Acoustic-Revolution-Lab
+scholar_userid: 2M2od3sAAAAJ
+
+keywords:
+  - Audio AI
+  - Music Generation
+  - Generative Audio
+  - Neural Audio Representation
+  - High-Fidelity Audio Synthesis
+  - Music Tokenization
+  - Neural Audio Codecs
+  - Multimodal Audio
+
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og-image.png
+
+# Keep working documents, tooling and the design-system preview out of the built site
+exclude:
+  - docs/
+  - .cursor/
+  - .tasks/
+  - design_system_preview.html
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - node_modules/

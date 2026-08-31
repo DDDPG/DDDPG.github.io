@@ -1,0 +1,5 @@
+<ul class="log-list">
+  {% for item in site.data.news limit: include.limit %}
+  <li class="log-item"><span class="log-date">{{ item.date }}</span><p class="log-text">{{ item.text_html }}</p></li>
+  {% endfor %}
+</ul>

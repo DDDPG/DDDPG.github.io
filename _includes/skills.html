@@ -1,0 +1,10 @@
+<div class="skills-grid">
+  {% for group in site.data.skills %}
+  <div class="skills-group">
+    <h3 class="skills-name">{{ group.group }}</h3>
+    <ul class="skills-list">
+      {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

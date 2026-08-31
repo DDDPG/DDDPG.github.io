@@ -1,0 +1,19 @@
+<div class="cv-entries">
+  {% for job in site.data.experience %}
+  <article class="cv-entry">
+    <div class="cv-entry-meta">
+      <b>{{ job.date }}</b>
+      {% if job.current %}<span class="chip chip--lead cv-entry-chip">Current</span>{% endif %}
+    </div>
+    <div class="cv-entry-body">
+      <h3 class="cv-entry-title">
+        {% if job.org_url %}<a class="u-link" href="{{ job.org_url }}">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %}
+      </h3>
+      <span class="cv-entry-role">{{ job.role }}{% if job.org_short %} · {{ job.org_short }}{% endif %}</span>
+      <ul class="cv-entry-list">
+        {% for item in job.items %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+  </article>
+  {% endfor %}
+</div>

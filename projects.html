@@ -1,0 +1,40 @@
+---
+layout: default
+title: Projects
+description: Open-source tools and engineering projects by Kangdi Wang — DDDPG (personal builder) and εar-LAB (research initiative).
+permalink: /projects/
+---
+
+{% include page-head.html kicker="Projects" title="Tools that ship." lede="Engineering artifacts alongside the papers — audio tooling, DAW internals, and open research code." %}
+
+<!-- ============ IDENTITIES ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">01</span>
+      <span class="rail-label">Two<br>Identities</span>
+    </aside>
+    <div class="spec-body">
+      {% include duo-panel.html %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECT CARDS ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">02</span>
+      <span class="rail-label">Selected<br>Projects</span>
+    </aside>
+    <div class="spec-body">
+      <div class="carousel" data-carousel>
+        <div class="carousel-rail" tabindex="0" aria-label="Open source project cards — horizontally scrollable">
+          {% for project in site.data.projects %}
+          {% include project-card.html project=project %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

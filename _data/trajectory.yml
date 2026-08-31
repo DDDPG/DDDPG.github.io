@@ -1,0 +1,65 @@
+# Career trajectory stream anchors — chronological, left → right.
+# x/y = anchor position on the SVG stream (viewBox 0 0 1200 300), in percent,
+# solved onto the path M0,200 C180,45 360,265 600,135 C840,10 1020,105 1200,65.
+# tag: above | below (label side of the curve); tag_end: right-aligns the label.
+
+- id: mixing
+  date: "2023.09"
+  label: "Mixing Engineer"
+  range: "2023.09 — 2024.11"
+  title: "Mix engineering & audio tooling"
+  x: 8.2
+  y: 56
+  tag: above
+  body_html: >-
+    Three years of stem and live mixing — Modern Sky training, campus
+    assemblies, and live-stream productions for Bilibili, 小象大鹅, VirtuaReal,
+    Yuehua Entertainment, and NeoNova. Built custom REAPER/Lua/Python audio
+    tooling along the way.
+
+- id: cereproc
+  date: "2024.11"
+  label: "CereProc"
+  range: "2024.11 — 2025.05"
+  title: "TTS development intern — CereProc"
+  x: 35.8
+  y: 67
+  tag: below
+  body_html: >-
+    Speech synthesis under Prof. Matthew Aylett's network — Chinese corpus
+    normalization, LLM-based TTS vocoder tuning, and developer SDK work.
+
+- id: initi
+  date: "2025.05"
+  label: "Initi AI"
+  range: "2025.05 — 2026.03"
+  title: "Music generation algorithm intern — Initi AI Ltd"
+  x: 62.7
+  y: 28.8
+  tag: above
+  body_html: >-
+    Large-scale music generation — training pipeline design, mix-quality
+    optimization, and production evaluation loops. First papers landed in this
+    period: <a class="u-link" href="https://arxiv.org/abs/2509.14912">εar-VAE</a>
+    (first author) and <a class="u-link" href="https://arxiv.org/abs/2511.20224">DUO-TOK</a>
+    (core idea).
+
+- id: qwen
+  date: "2026.03"
+  label: "Qwen Omni"
+  range: "2026.03 — Present"
+  title: "Qwen Omni internship — music generation & audio agents"
+  x: 90.4
+  y: 26
+  tag: below
+  tag_end: true
+  now: true
+  body_html: >-
+    Qwen-Music decoder work — fidelity, mix/edit capabilities — agentic
+    post-training for audio agents, and audio-quality annotation standards
+    plus data-pipeline filtering for training curation. This period:
+    <a class="u-link" href="https://cinedub2026.github.io/">CineDub</a> accepted
+    to ACM MM 2026 (co-first author), the
+    <a class="u-link" href="https://arxiv.org/abs/2607.11699">Qwen-Music</a>
+    technical report, <a class="u-link" href="https://arxiv.org/abs/2608.19843">ear-VAE2</a>,
+    and the ongoing complex-STFT representation line.

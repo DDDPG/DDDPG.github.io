@@ -1,0 +1,25 @@
+<div class="tlx{% if include.variant == 'hero' %} tlx--hero{% endif %}" data-tlx>
+  <div class="tlx-stage">
+    <svg class="tlx-curve" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path class="tlx-echo" d="M0,218 C180,60 360,280 600,150 C840,20 1020,120 1200,80" />
+      <path class="tlx-path" d="M0,200 C180,45 360,265 600,135 C840,10 1020,105 1200,65" />
+    </svg>
+    {% for node in site.data.trajectory %}
+    <button class="tlx-point tlx-point--{{ node.tag }}{% if node.tag_end %} tlx-point--end{% endif %}{% if node.now %} tlx-point--now is-active{% endif %}"
+      type="button" style="left: {{ node.x }}%; top: {{ node.y }}%;"
+      data-tlx-point="{{ node.id }}">
+      <span class="tlx-dot" aria-hidden="true"></span>
+      <span class="tlx-tag"><b>{{ node.date }}</b><span class="tlx-tag-text">{{ node.label }}</span></span>
+    </button>
+    {% endfor %}
+  </div>
+  <div class="tlx-details">
+    {% for node in site.data.trajectory %}
+    <div class="tlx-detail{% if node.now %} is-active{% endif %}" data-tlx-detail="{{ node.id }}">
+      <span class="tlx-detail-date">{{ node.range }}</span>
+      <h3 class="tlx-detail-title">{{ node.title }}</h3>
+      <p class="tlx-detail-body">{{ node.body_html }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

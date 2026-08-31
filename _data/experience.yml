@@ -1,0 +1,62 @@
+# Work & internship experience — newest first.
+
+- org: Qwen Omni Foundation Team
+  org_url: https://arxiv.org/abs/2607.11699
+  role: Music Generation & Agentic Post-Training Intern
+  date: "2026.03 — Present"
+  current: true
+  items:
+    - >-
+      Core contributor to Qwen-Music decoder development — improving audio fidelity,
+      mix/edit capabilities, and competitive benchmarks against Suno, Mureka, and peers;
+      also designed audio-quality annotation standards and data-pipeline filtering for
+      training curation.
+    - >-
+      Designed music human-evaluation and annotation protocols; built and iterated
+      audio-quality data pipelines that yielded measurable training gains.
+    - >-
+      Prototyped music + agent integration to strengthen fine-grained audio understanding
+      and hybrid multimodal reasoning; pipeline now feeds music data curation and base-model merges.
+    - >-
+      Advancing productivity-oriented audio agents (voice-over editing, recording optimization,
+      long-form podcast workflows) with REAPER and harness integrations plus CLI tooling and eval pipelines.
+
+- org: Initi AI Ltd
+  org_short: Initi AI
+  org_url: https://yinchaoyongxian.com
+  role: Music Generation Algorithm Intern
+  date: "2025.05 — 2026.03"
+  items:
+    - >-
+      Contributed to the Initi AI large-scale music generation model — training
+      pipeline design and mix/quality optimization across the generation stack.
+    - >-
+      Conducted mix-quality evaluation and feedback loops on model outputs and production masters.
+    - >-
+      Supported technical PR drafting and outsourced promotion coordination.
+
+- org: CereProc Ltd
+  org_url: https://www.cereproc.com
+  role: TTS Development Intern
+  date: "2024.11 — 2025.05"
+  items:
+    - Cleaned corpora and improved Chinese text-normalization quality for TTS datasets.
+    - >-
+      Participated in next-generation LLM-based TTS development; tuned the generative vocoder stack.
+    - Contributed to developer SDK debugging and new feature implementation.
+
+- org: Xiamen Kazami Technology
+  org_short: Kazami Tech
+  org_url: https://kazami.tech
+  role: Mix Engineer & Audio Developer
+  date: "2023.09 — Present"
+  items:
+    - >-
+      Built venue-specific audio control software on REAPER with Lua and Python — custom
+      widgets and workflow automation for live production.
+    - >-
+      Mixed live-stream events for partners including Bilibili Owl Cup, Bilibili World booth,
+      and related broadcast productions.
+    - >-
+      Designed and optimized on-air audio chains for talent including 小象大鹅, Yuehua Entertainment,
+      VirtuaReal, and NeoNova.

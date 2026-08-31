@@ -1,0 +1,15 @@
+.tasks/
+
+# Jekyll build output (deployed via GitHub Actions, not committed)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby / bundler
+vendor/
+.bundle/
+
+# OS / editor
+Thumbs.db
+.DS_Store

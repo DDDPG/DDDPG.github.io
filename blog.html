@@ -1,0 +1,56 @@
+---
+layout: default
+title: Blog
+description: Notes and essays by Kangdi Wang — audio AI, music generation, and engineering.
+permalink: /blog/
+---
+
+{% include page-head.html kicker="Blog" title="Notes & essays." lede="Standalone writing on audio AI, music generation, and engineering — outside the publication list." %}
+
+<!-- ============ SELECTED WRITING ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">01</span>
+      <span class="rail-label">Selected<br>Writing</span>
+    </aside>
+    <div class="spec-body">
+      <div class="writing-list">
+        {% for w in site.data.blog %}
+        <a class="writing-card" href="{{ w.url }}" target="_blank" rel="noopener">
+          <span class="writing-source">{{ w.source }}</span>
+          <h3 class="writing-title">{{ w.title }}</h3>
+          <p class="writing-excerpt">{{ w.excerpt }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POSTS ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">02</span>
+      <span class="rail-label">Posts</span>
+    </aside>
+    <div class="spec-body">
+      {% if site.posts.size > 0 %}
+      <ul class="blog-list">
+        {% for post in site.posts %}
+        <li class="blog-item">
+          <span class="log-date">{{ post.date | date: "%Y.%m" }}</span>
+          <div class="blog-item-body">
+            <a class="u-link blog-item-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% if post.excerpt %}<p class="blog-item-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="blog-empty">Nothing published yet — check back soon.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>

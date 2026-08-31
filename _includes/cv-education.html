@@ -1,0 +1,19 @@
+<div class="cv-entries">
+  {% for edu in site.data.education %}
+  <article class="cv-entry">
+    <div class="cv-entry-meta">
+      <b>{{ edu.date }}</b>
+      {% if edu.status %}<span class="cv-entry-status">{{ edu.status }}</span>{% endif %}
+    </div>
+    <div class="cv-entry-body">
+      <h3 class="cv-entry-title">{{ edu.institution }}</h3>
+      <span class="cv-entry-role">{{ edu.degree }}{% if edu.institution_short %} · {{ edu.institution_short }}{% endif %}</span>
+      {% if edu.highlights.size > 0 %}
+      <ul class="cv-entry-list">
+        {% for h in edu.highlights %}<li>{{ h }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

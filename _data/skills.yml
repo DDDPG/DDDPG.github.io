@@ -1,0 +1,24 @@
+# Competence matrix — grouped by function, not a flat tool list.
+
+- group: Audio AI Modeling
+  items:
+    - Audio Codec & Neural Autoencoder
+    - Tokenizer & Discretization
+    - Music / Omni-modal LLM
+    - Generative Audio Systems
+
+- group: Signal Processing & Perception
+  items:
+    - STFT / Spectral Modeling
+    - Psychoacoustic Weighting
+    - Speech & Singing Synthesis
+    - Music Information Retrieval
+    - Audio Rendering & DSP
+
+- group: Audio Production & DAW
+  items:
+    - Stem & Live Mixing
+    - Pro Tools · Studio One · REAPER
+    - VST Plugin Development
+    - ReaScript (Lua)
+    - Broadcast & Live-Stream Audio Chains

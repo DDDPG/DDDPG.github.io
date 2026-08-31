@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-col">
+      <span class="footer-head">Site</span>
+      <a class="u-link" href="{{ '/' | relative_url }}">Home</a>
+      <a class="u-link" href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a class="u-link" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="u-link" href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a class="u-link" href="{{ '/cv/' | relative_url }}">CV</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">Elsewhere</span>
+      <a class="u-link" href="{{ site.data.profile.links.github }}">GitHub · DDDPG</a>
+      <a class="u-link" href="{{ site.data.profile.links.lab }}">εar-LAB</a>
+      <a class="u-link" href="{{ site.data.profile.links.scholar }}">Google Scholar</a>
+      <a class="u-link" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+    </div>
+    <div class="footer-col footer-colophon">
+      <span>© {{ 'now' | date: '%Y' }} {{ site.data.profile.name }}</span>
+    </div>
+  </div>
+</footer>

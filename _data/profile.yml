@@ -1,0 +1,62 @@
+# Canonical identity object — pages read from here, never hardcode.
+name: Kangdi Wang
+alias: Lertoon
+research_since: "2025.05–Now"
+title: Independent Audio AI Researcher & Builder
+affiliation_now: Now Intern, Qwen Team
+pillars: Neural Audio Representations · Music Generation · Multimodal Audio
+tagline: People always talk the talk, but not walk the walk.
+email: wangkangdi21@gmail.com
+url: https://dddpg.github.io
+
+links:
+  github: https://github.com/DDDPG
+  lab: https://github.com/Eps-Acoustic-Revolution-Lab
+  scholar: https://scholar.google.com/citations?user=2M2od3sAAAAJ
+
+bio_short: >-
+  I am Kangdi Wang, an independent Audio AI researcher and builder — now interning
+  with the Qwen Omni team. Before research I spent three years as a mix engineer on
+  stems, live streams, and REAPER-based tooling; that production side still sits next
+  to the ML work. I look at neural audio representations, generative music, multimodal
+  audio, and audio agents — mostly from a signal-processing and mixing background.
+
+about_short: >-
+  I am Kangdi Wang, an independent Audio AI researcher and builder — currently interning
+  with the Qwen Omni foundation team on music generation, agentic post-training, and
+  audio-quality data curation (annotation standards and pipeline filtering). My work
+  focuses on neural audio representations, generative music modeling, and high-fidelity sound
+  synthesis. I design audio architectures that bridge mathematical optimization with human
+  auditory perception — spanning perceptually grounded neural autoencoders (εar-VAE, ear-VAE2),
+  semantic music tokenization (Duo-Tok), industrial music foundation models (Qwen-Music),
+  and multimodal video dubbing (CineDub). A three-year stem-mixing and live-production
+  background (Modern Sky training, campus and label sessions) grounds this research in
+  real-world audio craft. Through Epsilon Acoustic Revolution Lab (εar-LAB), I develop
+  open-source neural audio models and research tools for the audio AI community.
+
+philosophy: >-
+  Standard waveform and spectral objectives often penalize imperceptible phase shifts while
+  overlooking structural psychoacoustic phenomena. My research explores perceptually grounded
+  representations and frequency-domain inductive biases — integrating psychoacoustic weighting,
+  complex-spectral phase modeling, and source-aware tokenization into generative audio
+  architectures — to build systems that reconstruct and synthesize sound with true
+  perceptual fidelity.
+
+duo:
+  personal:
+    name: DDDPG
+    role: Personal Builder
+    desc: Personal research, engineering projects, experiments, and open-source tools.
+    items:
+      - ReaperDoc — REAPER knowledge base
+      - Reathon — REAPER ↔ Python bridge for audio agents
+    items_lab:
+      - EAR-Audio-Preview — VS Code audio tooling
+      - ear-eq — parametric EQ UI kit
+    url: https://github.com/DDDPG
+  lab:
+    name: εar-LAB
+    role: Research Initiative
+    desc: Epsilon Acoustic Revolution Lab — an open research initiative exploring the future of AI for audio and music.
+    mission: Building the next generation of AI systems that understand, represent, and create sound.
+    url: https://github.com/Eps-Acoustic-Revolution-Lab

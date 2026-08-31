@@ -1,0 +1,25 @@
+{% assign p = include.paper %}
+<article class="work-card" data-topics="{{ p.topics | join: ' ' }}">
+  <span class="scanline" aria-hidden="true"></span>
+  {% if p.cover %}
+  <div class="cover cover--bg cover--photo" aria-hidden="true">
+    <img src="{{ p.cover | relative_url }}" alt="" loading="lazy" decoding="async">
+  </div>
+  {% else %}
+  <div class="cover cover--bg" aria-hidden="true" data-mast="{{ p.cover_mast }}" data-seed="{{ p.cover_seed }}"></div>
+  {% endif %}
+  <div class="work-body">
+    <div class="work-chips">
+      <span class="chip{% if p.lead %} chip--lead{% endif %}">{{ p.role }}</span>
+      {% if p.concepts.first %}<span class="chip">{{ p.concepts.first }}</span>{% endif %}
+    </div>
+    <h3 class="work-title">{{ p.title }}</h3>
+    <span class="work-alias">{{ p.alias }}{% unless p.venue_short contains 'arXiv' %} · {{ p.venue_short }}{% endunless %}</span>
+    <p class="work-caption">{{ p.caption }}</p>
+    <div class="work-links">
+      {% if p.arxiv %}<a class="u-link" href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}
+      {% if p.code %}<a class="u-link" href="{{ p.code }}">Code</a>{% endif %}
+      {% if p.project %}<a class="u-link" href="{{ p.project }}">Project</a>{% endif %}
+    </div>
+  </div>
+</article>

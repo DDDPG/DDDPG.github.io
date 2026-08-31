@@ -1,0 +1,19 @@
+<header class="site-bar">
+  <div class="wrap">
+    <a class="bar-wordmark" href="{{ '/' | relative_url }}">{{ site.data.profile.name }}</a>
+    <nav class="bar-nav" id="site-nav" aria-label="Site navigation">
+      <a class="u-link{% if page.url == '/blog/' or page.layout == 'post' %} is-active{% endif %}" href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a class="u-link{% if page.url == '/publications/' %} is-active{% endif %}" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="u-link{% if page.url == '/projects/' %} is-active{% endif %}" href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a class="u-link{% if page.url == '/cv/' %} is-active{% endif %}" href="{{ '/cv/' | relative_url }}">CV</a>
+    </nav>
+    <div class="bar-actions">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+        <span class="dot" aria-hidden="true"></span><span class="toggle-label">Light</span>
+      </button>
+    </div>
+  </div>
+</header>

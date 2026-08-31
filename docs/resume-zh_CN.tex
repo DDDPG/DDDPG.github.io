@@ -1,0 +1,148 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{王康地 (Lertoon Wang)}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{(+86) 178-5422-5932}{E-mail wangkangdi21@gmail.com}{}
+
+\contactInfo{Linkedin \href{https://www.linkedin.com/in/kangdi-wang-lertoon/}{\uline{@kangdi-wang-lertoon}}}{WeChat DDDPG0512}{Github Profile: \href{https://github.com/DDDPG}{\uline{DDDPG}}}{}
+
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+
+\section{个人总结}
+% 本人在校成绩较为优秀, 长期实践于计算机音频相关学习工作, 有两年分轨、live混音经验, 曾担任大型集会、乐队演出混音师, 曾实践开发混音插件。兴趣在\textbf{语音算法}, \textbf{AI混音优化}、\textbf{音乐LLM}方向, 现实习于CereProc公司开发语音算法, 并研究学习MusicCoT, YuE中。常阅读英文期刊, 雅思6.5分, 可英文交流。
+本人在校成绩较为优秀, 长期实践于计算机音频相关学习工作, 有\textbf{三年分轨混音经验}, 曾于摩登天空学习混音, 担任校方集会、乐队演出混音师, 曾实践开发混音插件。个人对\textbf{音频算法}方向有强烈兴趣, Qwen-omni团队研发音乐生成与多模态agent模型, 主要负责\textbf{高保真音质与general audio agent}相关研究。现学习\textbf{音频表征/多模态agent训练}相关论文中。常阅读英文论文, 雅思口语6.5分。
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{中国海洋大学}, 计算机科学与技术, \textit{本科}}{2021-09 - 2025-06}
+\ rank < \textbf{10\%}, GPA \textbf{3.77/4}, 优秀毕业生, 学校奖学金(3次)。
+\datedsubsection{\textbf{中科院声学所-语音实验室}, 电子信息, \textit{在读研究生}}{2025-09 - 2028-06}
+
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{计算机技术}: Python, 信号处理, C++, Lua(ReaScript)
+  \item \textbf{音频技术}: Protools, Studio One, Reaper, VST
+  \item \textbf{关键词}: Audio Render, Music Understand \& Gen, Mixing, DSP, Omni
+\end{itemize}
+
+% \end{itemize}
+\section{研究课题/项目}
+% increase linespacing [parsep=0.5ex]
+% \datedsubsection{\textbf{Human-Robot-Speaker-Separation dataset (RO-MAN2025 LBR)}}{2024.12 -- 至今}
+% \begin{itemize}[parsep=0.2ex]
+%   \item 专注于模拟复杂场景下人机对话的语音数据集，模拟AD/DA、对话打断等多种delay与混响噪声等因素。初版语音均用TTS引擎生成, 伴有部分真人录音数据测试, 规模正进一步扩大。。
+% \end{itemize}
+
+%\datedsubsection{\textbf{RoTF-net: A Time–Frequency domain TSE network}}{2025.02 -- 2025.05}
+%\begin{itemize}[parsep=0.2ex]
+%  \item 人机语音交互场景下的语音分离模型，基于robot speaker数据天然先验的特性进行设计, 下游任务泛用性较高, 降低参数量并打平sota模型。
+%\end{itemize}
+
+% \datedsubsection{\textbf{Music Beat-Tracking Project}}{2023.12 -- 2024.02}
+% \begin{itemize}[parsep=0.2ex]
+% %   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
+%   \item 使用GTZAN数据集针对不同音乐素材进行beat预测。时频域结合, 在频域做chunk之后用TCN架构做beats, downbeats和tempo的预测, 结果用DBN进行平滑和插值。使用madmom库进行评估, beat的P-score在0.75左右。考虑过后续结合DTW, 做成混音里对齐鼓组分轨的的插件。
+% \end{itemize}
+
+\datedsubsection{\textbf{$\epsilon$ar-VAE (INTERSPEECH 2026)}}{2025.7 -- 2025.9}
+\begin{itemize}[parsep=0.2ex]
+  \item 针对音乐信号重建特化的VAEGAN模型，音乐重建sota，引入新的训练手段和监督方式快速解决了复杂音乐信号重建的啸叫、高频谐波缺失等问题，提升了音频保真度, 方案被知名商业\&开源项目\textbf{Stable Audio 3}吸纳, 且同尺寸效果更优 \textbf{\href{https://eps-acoustic-revolution-lab.github.io/EAR_VAE/}{\uline{Online Demo}}}。
+\end{itemize}
+
+\datedsubsection{\textbf{DUO-TOK (ACM MM 2026)}}{2025.9 -- 2025.12}
+\begin{itemize}[parsep=0.2ex]
+  \item 非一作, 模型本身是针对音乐特化设计的audio codec, 个人贡献是提出二阶段的vocal-instrument mask预测head, 改善复杂音乐信号表征中，不同元素的semantic密度差异问题。\textbf{\href{https://eps-acoustic-revolution-lab.github.io/DUO_TOK/}{\uline{Online Demo}}}。
+\end{itemize}
+
+\datedsubsection{\textbf{CineDub (ACM MM 2026)}}{2026.02 -- 2026.04}
+\begin{itemize}[parsep=0.2ex]
+  \item 共一作, 基于DiT的video dubbing模型, 主要feature是在弱condition下(非人脸裁剪or声纹分割), 实现精确的多说话人配音效果, 个人在其中主要进行了全局的时序信息注入的condition设计, 部分训练过程, negative condition探索, 以及latent decoder的调优。\textbf{\href{https://cinedub2026.github.io/}{\uline{Online Demo}}}。
+\end{itemize}
+
+\datedsubsection{\textbf{$\epsilon$ar-DiT}}{2025.11 -- 2026.02}
+\begin{itemize}[parsep=0.2ex]
+  \item 尝试迁移了主流DiT优化路径到音频领域，如Lightning DiT+VAVAE，一系列REPA，JiT，DiTAR等，旨在提升condition学习效率和音频信息表征。
+  \item 将GAN范式引入DiT旨在解决连续到离散的高保真音乐重建而进行的研究, 目前实验成果有效缓解了音乐频谱中高频的过度平滑/伪影问题, 提升了乐器的高频结相效果。
+\end{itemize}
+
+\datedsubsection{\textbf{Reathon}}{2025.12 -- 至今}
+\begin{itemize}[parsep=0.2ex]
+  \item 旨在打通Reaper和python深度学习环境的python库，目前项目完成了Reaper工程的全参数解析映射与大部分工程文件参数的python API构建，项目被Reaper官方社区管理员置顶，用户共创中，后续目前正作为音视频agent的相关原子能力工具进行深入开发。\textbf{\href{https://dddpg.github.io/ReaperDoc/}{\uline{Online Doc}}}。
+\end{itemize}
+
+% \datedsubsection{\textbf{谐波转移包络算法}}{2024.2 -- 2024.04}
+% \begin{itemize}[parsep=0.2ex]
+%   \item 压缩器插件开发过程产物，复现三体声音科技的技术blog, 用轻量级神经网络训练一个带状态的WaveShaper, 将幅度调制前的偶次谐波分量映射至奇次，调制后则变为偶次，使听感更温暖殷实。
+% \end{itemize}
+
+\datedsubsection{\textbf{EAR Audio Preview}}{2026.05 -- 至今}
+\begin{itemize}[parsep=0.2ex]
+  \item vscode专业监听插件, 弥补了目前IDE中音频监听的专业插件空白, 内容涵盖Spec/Polar/LUFS等多领域分析, 并且内置了监听矫正等常用功能, 目前已接入日常音频工作流并持续迭代中。\textbf{\href{https://github.com/Eps-Acoustic-Revolution-Lab/EAR-Audio-Preview}{\uline{Repo}}}。
+\end{itemize}
+
+% `1w
+
+\section{实习经历}
+\datedsubsection{\textbf{厦门风见科技有限公司 | \href{kazami.tech}{kazami.tech}}, 混音师, 音频开发}{2023.09 -- 至今}
+\begin{itemize}
+%   \item 飞猪北京前端团队全面负责各交通线的票务(机票/火车票/汽车票) web 应用与事业群基础架构研发
+  \item 使用Reaper DAW为基底, lua与python结合, 针对某场地进行音频控件的客制化软件开发。
+  \item 在其承接的各直播活动中进行混音工作, 合作方: \href{https://www.bilibili.com/video/BV1Tu411p7mL/?spm_id_from=333.337.search-card.all.click&vd_source=4a2102b1492a02f24d5aab2ce3961279}{\uline{Bilibili-Owl-Cup}}, \href{https://space.bilibili.com/1178470738/dynamic}{\uline{Bilibili-World展位}}等。
+  \item 负责直播人员的音频链路搭建与声效优化, 合作方: \href{https://www.zhipin.com/gongsi/827bf70c5bf4e3861XV_39q5FFU~.html}{\uline{小象大鹅}}, \href{https://space.bilibili.com/2018113152}{\uline{乐华娱乐}}, \href{https://space.bilibili.com/413748120}{\uline{VirtuaReal}}, \href{https://space.bilibili.com/3494368205867483}{\uline{NeoNova}}等。
+\end{itemize}
+
+\datedsubsection{\textbf{CereProc Ltd | \href{www.cereproc.com}{cereproc.com}}, TTS开发}{2024.11 -- 2025.05}
+\begin{itemize}
+  \item 清洗数据并协助优化中文语料的normalization质量。
+  \item 参与新版本基于LLM的TTS模型开发, 对生成端vocoder进行调优。
+  \item 参与开发者SDK的debug与新功能实现。
+\end{itemize}
+
+\datedsubsection{\textbf{上海自由量级智能科技有限公司 | \href{yinchaoyongxian.com}{yinchaoyongxian.com}}, 音乐生成算法}{2025.05 -- 2026.03}
+\begin{itemize}
+  \item 参与"音潮"音乐生成大模型的构建, 负责部分链路的训练和数据链路设计, 优化生成模型的混音效果/音质
+  \item 对音乐成品和模型生成效果进行混音评测反馈
+  \item 参与技术团队pr稿件的撰写和外包宣发资源监督
+\end{itemize}
+
+\datedsubsection{\textbf{Qwen-omni基座团队 | \href{https://arxiv.org/abs/2607.11699v1}{\uline{Tech Report}}}, 音乐生成算法/agentic后训练}{2026.03 -- 至今}
+\begin{itemize}
+  \item 深度参与Qwen-Music模型的构建，主做decoder相关工作，提升其音质表现和混音编辑能力, 测评结果对齐/超过suno，mureka等竞品, Core Contributor.
+  \item 制定music人工评测/标注规范并跟进验收, 制定音质数据管线并迭代，在模型训练中取得收益
+  \item 完成music+agent的结合方案尝试, 提升qwen-omni模型的细粒度音频理解能力，并进一步提升其混合reasoning(多模态理解+coding)能力，用定量结果辅助定性，其链路已反哺music项目的数据刷取管线, 并完成了基模的合版尝试.
+  \item 正推进生产力场景的audio agent方向, 如"口播剪辑", "录音优化", "长音频播客"等等场景, 目前打通了reaper和各种harness的工作流并且正开发高性能的cli调用方式, 并制定了相关的data\&eval pipeline 预计能力合并入下一代模型.
+\end{itemize}
+
+% \section{\faInfo\ 社会实践/其他}
+\section{社区参与/实践其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item 合作创立学术组织\textbf{\href{https://github.com/Eps-Acoustic-Revolution-Lab}{\uline{Ear-lab}}}, 任主要成员与运营者。
+  \item 乐于参与开源社区讨论, \textbf{课余完成\href{https://github.com/DDDPG/ReaperDoc}{\uline{ReaperDoc}}项目开发工作}。
+  \item 参与“2024年SMP-Nx混音大赛”\textbf{资料翻译、英文采访及文章撰稿}工作。
+  \item \textbf{主导制作并参与开发}文字互动游戏\href{https://store.steampowered.com/app/2414730/Elf_of_Era_Idols_Project/}{《造梦彩券》}, \textbf{Steam平台98\%好评率}。
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
