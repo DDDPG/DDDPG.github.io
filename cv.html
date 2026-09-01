@@ -8,13 +8,32 @@ permalink: /cv/
 {% assign papers = site.data.papers | sort: 'date' | reverse %}
 {% assign profile = site.data.profile %}
 
-{% include page-head.html kicker="Curriculum Vitae" title="Trajectory & capabilities." lede="An independent research practice across neural audio representation, generative music, and multimodal audio — grounded in mix engineering and industry internships." %}
+{% include page-head.html kicker="Curriculum Vitae" title="Trajectory & capabilities." lede="An independent research practice across neural audio representation, generative music, and multimodal audio — grounded in mix engineering and industry internships." pdf="/assets/cv/Kangdi_Wang_CV.pdf" %}
+
+<div class="wrap">
+<div class="cv-sheet">
+  <header class="cv-sheet-head">
+    <h2 class="cv-sheet-name">{{ profile.name }}</h2>
+  </header>
+
+<!-- ============ SUMMARY ============ -->
+<section class="spec-section">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">01</span>
+      <span class="rail-label">Summary</span>
+    </aside>
+    <div class="spec-body">
+      <p class="cv-summary">{{ profile.cv_summary }}</p>
+    </div>
+  </div>
+</section>
 
 <!-- ============ CONTACT ============ -->
 <section class="spec-section">
   <div class="wrap spec-grid">
     <aside class="spec-rail">
-      <span class="rail-index">01</span>
+      <span class="rail-index">02</span>
       <span class="rail-label">Contact</span>
     </aside>
     <div class="spec-body">
@@ -24,8 +43,6 @@ permalink: /cv/
         <span class="mono"><b>Lab</b> — <a class="u-link" href="{{ profile.links.lab }}">εar-LAB</a></span>
         <span class="mono"><b>Scholar</b> — <a class="u-link" href="{{ profile.links.scholar }}">Profile</a></span>
       </div>
-      <p class="cv-contact-role">{% include profile-role.html %}</p>
-      {% if profile.affiliation_now %}<p class="cv-contact-affil">{{ profile.affiliation_now }}</p>{% endif %}
     </div>
   </div>
 </section>
@@ -34,7 +51,7 @@ permalink: /cv/
 <section class="spec-section">
   <div class="wrap spec-grid">
     <aside class="spec-rail">
-      <span class="rail-index">02</span>
+      <span class="rail-index">03</span>
       <span class="rail-label">Experience</span>
     </aside>
     <div class="spec-body">
@@ -47,7 +64,7 @@ permalink: /cv/
 <section class="spec-section">
   <div class="wrap spec-grid">
     <aside class="spec-rail">
-      <span class="rail-index">03</span>
+      <span class="rail-index">04</span>
       <span class="rail-label">Publications</span>
     </aside>
     <div class="spec-body">
@@ -57,7 +74,7 @@ permalink: /cv/
           <span class="log-date">{{ p.date }}</span>
           <div class="cv-pub-body">
             <span class="cv-pub-title">{{ p.title }}</span>
-            <span class="cv-pub-meta">{{ p.venue }} · {{ p.role }}</span>
+            <span class="cv-pub-meta">{% if p.conference %}{{ p.conference }}{% else %}{{ p.venue }}{% endif %} · {{ p.role }}</span>
           </div>
         </li>
         {% endfor %}
@@ -71,7 +88,7 @@ permalink: /cv/
 <section class="spec-section">
   <div class="wrap spec-grid">
     <aside class="spec-rail">
-      <span class="rail-index">04</span>
+      <span class="rail-index">05</span>
       <span class="rail-label">Education</span>
     </aside>
     <div class="spec-body">
@@ -84,8 +101,8 @@ permalink: /cv/
 <section class="spec-section">
   <div class="wrap spec-grid">
     <aside class="spec-rail">
-      <span class="rail-index">05</span>
-      <span class="rail-label">Community<br>&amp; Practice</span>
+      <span class="rail-index">06</span>
+      <span class="rail-label">Community &amp; Practice</span>
     </aside>
     <div class="spec-body">
       {% include cv-community.html %}
@@ -97,7 +114,7 @@ permalink: /cv/
 <section class="spec-section">
   <div class="wrap spec-grid">
     <aside class="spec-rail">
-      <span class="rail-index">06</span>
+      <span class="rail-index">07</span>
       <span class="rail-label">Capabilities</span>
     </aside>
     <div class="spec-body">
@@ -105,3 +122,5 @@ permalink: /cv/
     </div>
   </div>
 </section>
+</div>
+</div>

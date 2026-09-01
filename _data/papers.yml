@@ -8,7 +8,8 @@
   year: 2025
   date: "2025.09"
   venue: "arXiv:2509.14912"
-  venue_short: "arXiv"
+  venue_short: "INTERSPEECH 2026"
+  conference: "INTERSPEECH 2026"
   area: "Perceptual Audio Representation"
   arxiv: "2509.14912"
   cover: /assets/img/papers/ear-vae.png
@@ -43,7 +44,8 @@
   year: 2025
   date: "2025.11"
   venue: "arXiv:2511.20224"
-  venue_short: "arXiv"
+  venue_short: "ACM MM 2026"
+  conference: "ACM Multimedia 2026"
   area: "Music Tokenization"
   arxiv: "2511.20224"
   cover: /assets/img/papers/duo-tok.png
@@ -107,6 +109,7 @@
   date: "2026.04"
   venue: "ACM Multimedia 2026"
   venue_short: "ACM MM 2026"
+  conference: "ACM Multimedia 2026"
   area: "Multimodal Audio"
   arxiv: "2608.15734"
   cover: /assets/img/papers/cinedub.png

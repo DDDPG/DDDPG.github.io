@@ -21,6 +21,18 @@ bio_short: >-
   to the ML work. I look at neural audio representations, generative music, multimodal
   audio, and audio agents — mostly from a signal-processing and mixing background.
 
+cv_summary: >-
+  Audio AI researcher and engineer working at the intersection of neural audio
+  representation, generative music, and professional music production. Core
+  contributor and second author of Qwen-Music, an industrial-scale music generation
+  system, with hands-on experience in audio quality optimization, music mixing/editing,
+  evaluation, data pipelines, and music agents. First author of εar-VAE
+  (INTERSPEECH 2026) and of εar-VAE2 for high-fidelity stereo music reconstruction
+  with frequency-aware complex-spectral modeling. In parallel, 3+ years of stem/live
+  mixing experience, professional mixing training at Modern Sky, and practical
+  DAW/audio tooling. Interested in generative audio, audio representation, DSP,
+  music understanding, and agentic audio systems.
+
 about_short: >-
   I am Kangdi Wang, an independent Audio AI researcher and builder — currently interning
   with the Qwen Omni foundation team on music generation, agentic post-training, and
