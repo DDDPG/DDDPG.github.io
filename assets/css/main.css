@@ -803,3 +803,12 @@ html:not(.theme-anim) *::after { transition-property: none !important; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* Research and hiring copy: readable summaries and browsable project evidence. */
+.cv-summary { max-width: 72ch; font-size: 1rem; line-height: 1.75; color: var(--ink-2); }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.project-grid .project-card { min-width: 0; }
+.project-grid .proj-links { margin-top: auto; padding-top: 18px; }
+.pub-content .pub-caption + .pub-caption { margin-top: 12px; }
+.hero-links a { font-size: .875rem; overflow-wrap: anywhere; }
+@media (max-width: 800px) { .project-grid { grid-template-columns: 1fr; } }

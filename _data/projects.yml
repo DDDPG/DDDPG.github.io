@@ -1,70 +1,79 @@
-# Open-source / engineering projects.
+# Audio engineering projects; status distinguishes public tools from prototypes.
 
 - id: ear-audio-preview
   name: EAR-Audio-Preview
-  affiliation_html: "<b>εar-LAB</b> · Eps-Acoustic-Revolution-Lab"
-  status: Active
+  affiliation_html: <b>εar-LAB</b> · Eps-Acoustic-Revolution-Lab
+  status: Open Source
   status_live: true
-  type: VS Code Extension & Webview Audio Tool
-  desc: >-
-    Instant high-fidelity audio waveform/spectrogram preview and playback directly
-    inside the VS Code workspace — no external DAW required.
-  tags: ["VS Code Extension", "TypeScript", "Web Audio API", "Open Source"]
+  type: Audio Analysis in VS Code
+  desc: Inspect waveforms, spectrograms, phase, and loudness alongside model code. Built for listening
+    to and diagnosing audio outputs without leaving the development workspace.
+  tags:
+  - VS Code Extension
+  - TypeScript
+  - Web Audio API
+  - Open Source
   shot: image
   image: /assets/img/projects/ear-audio-preview.png
   icon: waveform
   links:
-    - label: GitHub
-      url: https://github.com/Eps-Acoustic-Revolution-Lab/EAR-Audio-Preview
-
-- id: ear-eq
-  name: ear-eq
-  affiliation_html: "<b>εar-LAB</b> · Eps-Acoustic-Revolution-Lab"
-  status: Active
+  - label: GitHub
+    url: https://github.com/Eps-Acoustic-Revolution-Lab/EAR-Audio-Preview
+- id: reaperdoc
+  name: ReaperDoc
+  affiliation_html: <b>DDDPG</b> · Personal Builder
+  status: Live Demo
   status_live: true
-  type: Parametric EQ UI / Audio Frontend Design System
-  desc: >-
-    A reusable DSP effector UI kit — knob, EQ canvas, radial menu, and design tokens
-    for quickly composing clean, beautiful mixing-plugin interfaces.
-  tags: ["React", "TypeScript", "Tailwind", "DSP UI", "Design System"]
-  shot: eq
-  icon: eq
+  type: Interactive REAPER .RPP Specification & Parser Reference
+  desc: An interactive reference for REAPER project-file structures and parameter meanings. Helps developers
+    inspect tracks, items, and effect state when building DAW tooling.
+  tags:
+  - DAW Engineering
+  - React / TypeScript
+  - REAPER API
+  - Online Demo
+  shot: rpp
+  icon: braces
   links:
-    - label: GitHub
-      url: https://github.com/Eps-Acoustic-Revolution-Lab/ear-eq
-    - label: Live Demo
-      url: https://eps-acoustic-revolution-lab.github.io/ear-eq/
-
+  - label: GitHub
+    url: https://github.com/DDDPG/ReaperDoc
+  - label: Live Demo
+    url: https://dddpg.github.io/ReaperDoc/
 - id: reathon
   name: Reathon
-  affiliation_html: "<b>DDDPG</b> · Personal Builder"
-  status: In Development
+  affiliation_html: <b>DDDPG</b> · Personal Builder
+  status: Prototype
   status_live: false
-  type: REAPER ↔ Python Bridge for Audio Agents
-  desc: >-
-    Python library bridging REAPER and deep-learning workflows — full .RPP parameter
-    parsing, project-file APIs, and atomic capabilities for audio-agent tooling.
-    Featured by the official REAPER community.
-  tags: ["Python", "REAPER API", "Audio Agents", "Open Source"]
+  type: Programmable REAPER Workflows
+  desc: A Python bridge between REAPER projects and audio-agent workflows, exploring project-file inspection
+    and programmable DAW operations.
+  tags:
+  - Python
+  - REAPER API
+  - Audio Agents
+  - Prototype
   shot: image
   image: /assets/img/projects/reathon.png
   icon: braces
   links: []
-
-- id: reaperdoc
-  name: ReaperDoc
-  affiliation_html: "<b>DDDPG</b> · Personal Builder"
-  status: Live Demo
+- id: ear-eq
+  name: ear-eq
+  affiliation_html: <b>εar-LAB</b> · Eps-Acoustic-Revolution-Lab
+  status: Open Source
   status_live: true
-  type: Interactive REAPER .RPP Specification & Parser Reference
-  desc: >-
-    Interactive documentation and parameter mapping for REAPER .RPP project files —
-    reverse-engineering chunk structures and state keys.
-  tags: ["DAW Engineering", "React / TypeScript", "REAPER API", "Online Demo"]
-  shot: rpp
-  icon: braces
+  type: Reusable Interfaces for Audio Tools
+  desc: Reusable knobs, EQ curves, and interaction components for audio software. Brings mixing-oriented
+    controls into React and TypeScript interfaces.
+  tags:
+  - React
+  - TypeScript
+  - Tailwind
+  - DSP UI
+  - Design System
+  shot: eq
+  icon: eq
   links:
-    - label: GitHub
-      url: https://github.com/DDDPG/ReaperDoc
-    - label: Live Demo
-      url: https://dddpg.github.io/ReaperDoc/
+  - label: GitHub
+    url: https://github.com/Eps-Acoustic-Revolution-Lab/ear-eq
+  - label: Live Demo
+    url: https://eps-acoustic-revolution-lab.github.io/ear-eq/

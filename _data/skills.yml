@@ -2,23 +2,19 @@
 
 - group: Audio AI Modeling
   items:
-    - Audio Codec & Neural Autoencoder
-    - Tokenizer & Discretization
-    - Music / Omni-modal LLM
-    - Generative Audio Systems
-
+  - Perceptual audio autoencoders — εar-VAE / ear-VAE2
+  - Music tokenization — DuoTok
+  - Music generation and audio rendering — Qwen-Music
+  - Multimodal speech and sound generation — CineDub
 - group: Signal Processing & Perception
   items:
-    - STFT / Spectral Modeling
-    - Psychoacoustic Weighting
-    - Speech & Singing Synthesis
-    - Music Information Retrieval
-    - Audio Rendering & DSP
-
+  - Complex STFT, magnitude & phase modeling
+  - Perceptual weighting & stereo reconstruction
+  - Listening evaluation & audio-quality annotation
+  - Speech synthesis & generative vocoders
 - group: Audio Production & DAW
   items:
-    - Stem & Live Mixing
-    - Pro Tools · Studio One · REAPER
-    - VST Plugin Development
-    - ReaScript (Lua)
-    - Broadcast & Live-Stream Audio Chains
+  - Python / Lua — REAPER workflow tooling
+  - TypeScript / React — audio interfaces
+  - Stem mixing & live-stream audio chains
+  - REAPER · Pro Tools · Studio One

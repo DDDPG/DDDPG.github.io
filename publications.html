@@ -7,7 +7,7 @@ permalink: /publications/
 
 {% assign years = site.data.papers | map: 'year' | uniq | sort | reverse %}
 
-{% include page-head.html kicker="Publications" title="Writings & papers." lede="Author roles are stated exactly as on the official author lists." %}
+{% include page-head.html kicker="Publications" title="Research in sound." lede="Perceptual representations, controllable music generation, and multimodal audio — with papers, code, and listening demos." %}
 
 <section class="spec-section">
   <div class="wrap spec-grid">
@@ -33,6 +33,8 @@ permalink: /publications/
             </div>
             <h3 class="pub-title">{{ p.title }}</h3>
             <p class="pub-caption">{{ p.caption }}</p>
+            {% if p.contribution %}<p class="pub-caption"><strong>My contribution.</strong> {{ p.contribution }}</p>{% endif %}
+            {% if p.impact %}<p class="pub-caption"><strong>Research outcome.</strong> {{ p.impact }}</p>{% endif %}
             <div class="work-links">
               {% if p.arxiv %}<a class="u-link" href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}
               {% if p.code %}<a class="u-link" href="{{ p.code }}">Code</a>{% endif %}

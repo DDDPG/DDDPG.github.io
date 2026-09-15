@@ -1,6 +1,6 @@
 # DDDPG.github.io
 
-Personal site of **Kangdi Wang** — Independent Audio AI Researcher & Builder.
+Personal site of **Kangdi Wang** — Audio AI Researcher & Engineer.
 Live at [https://dddpg.github.io](https://dddpg.github.io).
 
 Design system: **"Audible Archive"** — editorial serif typography (Fraunces /

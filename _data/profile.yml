@@ -1,74 +1,54 @@
-# Canonical identity object — pages read from here, never hardcode.
+# Canonical identity object — pages read from here.
 name: Kangdi Wang
 alias: Lertoon
-research_since: "2025.05–Now"
-title: Independent Audio AI Researcher & Builder
-affiliation_now: Now Intern, Qwen Team
-pillars: Neural Audio Representations · Music Generation · Multimodal Audio
+research_since: null
+title: Audio AI Researcher & Engineer
+affiliation_now: Research Intern · Qwen Omni
+pillars: Perceptual Audio Modeling · Music Generation · Audio Systems
 tagline: People always talk the talk, but not walk the walk.
 email: wangkangdi21@gmail.com
 url: https://dddpg.github.io
-
 links:
   github: https://github.com/DDDPG
   lab: https://github.com/Eps-Acoustic-Revolution-Lab
   scholar: https://scholar.google.com/citations?user=2M2od3sAAAAJ
-
-bio_short: >-
-  I am Kangdi Wang, an independent Audio AI researcher and builder — now interning
-  with the Qwen Omni team. Before research I spent three years as a mix engineer on
-  stems, live streams, and REAPER-based tooling; that production side still sits next
-  to the ML work. I look at neural audio representations, generative music, multimodal
-  audio, and audio agents — mostly from a signal-processing and mixing background.
-
-cv_summary: >-
-  Audio AI researcher and engineer working at the intersection of neural audio
-  representation, generative music, and professional music production. Core
-  contributor and second author of Qwen-Music, an industrial-scale music generation
-  system, with hands-on experience in audio quality optimization, music mixing/editing,
-  evaluation, data pipelines, and music agents. First author of εar-VAE
-  (INTERSPEECH 2026) and of εar-VAE2 for high-fidelity stereo music reconstruction
-  with frequency-aware complex-spectral modeling. In parallel, 3+ years of stem/live
-  mixing experience, professional mixing training at Modern Sky, and practical
-  DAW/audio tooling. Interested in generative audio, audio representation, DSP,
-  music understanding, and agentic audio systems.
-
-about_short: >-
-  I am Kangdi Wang, an independent Audio AI researcher and builder — currently interning
-  with the Qwen Omni foundation team on music generation, agentic post-training, and
-  audio-quality data curation (annotation standards and pipeline filtering). My work
-  focuses on neural audio representations, generative music modeling, and high-fidelity sound
-  synthesis. I design audio architectures that bridge mathematical optimization with human
-  auditory perception — spanning perceptually grounded neural autoencoders (εar-VAE, ear-VAE2),
-  semantic music tokenization (Duo-Tok), industrial music foundation models (Qwen-Music),
-  and multimodal video dubbing (CineDub). A three-year stem-mixing and live-production
-  background (Modern Sky training, campus and label sessions) grounds this research in
-  real-world audio craft. Through Epsilon Acoustic Revolution Lab (εar-LAB), I develop
-  open-source neural audio models and research tools for the audio AI community.
-
-philosophy: >-
-  Standard waveform and spectral objectives often penalize imperceptible phase shifts while
-  overlooking structural psychoacoustic phenomena. My research explores perceptually grounded
-  representations and frequency-domain inductive biases — integrating psychoacoustic weighting,
-  complex-spectral phase modeling, and source-aware tokenization into generative audio
-  architectures — to build systems that reconstruct and synthesize sound with true
-  perceptual fidelity.
-
+bio_short: 'I build audio models and tools with a focus on perceptual quality: how music preserves detail,
+  phase, and stereo space. My work spans first-author research on εar-VAE and ear-VAE2, music generation
+  at Qwen Omni, and REAPER-based audio engineering. Three years of mixing and live production inform both
+  the problems I study and the way I evaluate results.'
+about_short: I work across perceptual audio representation, music generation, and audio software. I am
+  first author of εar-VAE and ear-VAE2, a co-first author of CineDub, and a contributor to Qwen-Music
+  and DuoTok. At Qwen Omni, my work includes music decoder development, listening evaluation, and audio-quality
+  data curation. Alongside research, I build tools for inspecting audio and working with REAPER projects.
+  My background in mixing, live production, and robotics connects model design with practical audio workflows.
+philosophy: I study how training objectives and model architecture affect audible detail, phase coherence,
+  and stereo imaging. My work uses perceptual weighting, complex-spectral representations, and listening
+  evaluation to connect improvements in model behavior with the sound people hear.
 duo:
   personal:
     name: DDDPG
-    role: Personal Builder
-    desc: Personal research, engineering projects, experiments, and open-source tools.
+    role: Audio Engineering & Tools
+    desc: REAPER project tooling and audio workflow experiments developed through hands-on production
+      work.
     items:
-      - ReaperDoc — REAPER knowledge base
-      - Reathon — REAPER ↔ Python bridge for audio agents
+    - ReaperDoc — REAPER knowledge base
+    - Reathon — REAPER ↔ Python bridge for audio agents
     items_lab:
-      - EAR-Audio-Preview — VS Code audio tooling
-      - ear-eq — parametric EQ UI kit
+    - EAR-Audio-Preview — VS Code audio tooling
+    - ear-eq — parametric EQ UI kit
     url: https://github.com/DDDPG
   lab:
     name: εar-LAB
-    role: Research Initiative
-    desc: Epsilon Acoustic Revolution Lab — an open research initiative exploring the future of AI for audio and music.
-    mission: Building the next generation of AI systems that understand, represent, and create sound.
+    role: Collaborative Audio Research
+    desc: An open research initiative I co-founded to share neural audio models, listening demos, and
+      engineering tools.
+    mission: Open models and tools for representing, generating, and evaluating sound.
     url: https://github.com/Eps-Acoustic-Revolution-Lab
+cv_summary: Audio AI researcher and engineer working at the intersection of neural audio representation,
+  generative music, and professional music production. Core contributor and second author of Qwen-Music,
+  an industrial-scale music generation system, with hands-on experience in audio quality optimization,
+  music mixing/editing, evaluation, data pipelines, and music agents. First author of εar-VAE (INTERSPEECH
+  2026) and of εar-VAE2 for high-fidelity stereo music reconstruction with frequency-aware complex-spectral
+  modeling. In parallel, 3+ years of stem/live mixing experience, professional mixing training at Modern
+  Sky, and practical DAW/audio tooling. Interested in generative audio, audio representation, DSP, music
+  understanding, and agentic audio systems.

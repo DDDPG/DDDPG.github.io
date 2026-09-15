@@ -1,17 +1,17 @@
-# External writing — rendered as cards on /blog/ above the on-site post list.
-# Newest first. `url` opens the original piece in a new tab.
+# Original Chinese article titles with English summaries for international readers.
 
-- title: "可能是第一个在IDE上认真做监听的工具"
-  source: "语音之家 · 微信公众号"
-  url: "https://mp.weixin.qq.com/s/-qqPUB9aQzwrJi3ktG_iuQ"
-  excerpt: "介绍 EAR Audio Preview 的功能与技术实现：在 VS Code 中查看波形、时频结构、实时频谱、相位关系、响度、F0 与 onset，完成片段导出与耳机频响校准。"
-
-- title: "εar-VAE：回归听觉感知的高保真音乐重建"
-  source: "语音之家 · 微信公众号"
-  url: "https://mp.weixin.qq.com/s/RJ8WQ4v4aKR9ck_UBP3olw"
-  excerpt: "K-weighting 感知加权、相位监督与立体声表示设计；基于循环统计的 ICPC/CCPC 相位指标；MuChin 与内部集上六项指标全面领先。"
-
-- title: "Fourier is Frontier：高保真音乐建模在频域上的十万个为什么"
-  source: "语音之家 · 微信公众号"
-  url: "https://mp.weixin.qq.com/s/wEz7t0p7IABgwFP6pzl4xQ"
-  excerpt: "复数 STFT 频域建模、Spec-SnakeBeta 按频点周期自适应激活、Duplex-Aware Refiner 心理声学分频修正，以及数据质量审计流水线。"
+- title: 可能是第一个在IDE上认真做监听的工具
+  source: 语音之家 · WeChat (Chinese)
+  url: https://mp.weixin.qq.com/s/-qqPUB9aQzwrJi3ktG_iuQ
+  excerpt: 'Building audio inspection into VS Code: waveform and spectral views, phase, loudness, and
+    listening tools for audio development.'
+- title: εar-VAE：回归听觉感知的高保真音乐重建
+  source: 语音之家 · WeChat (Chinese)
+  url: https://mp.weixin.qq.com/s/RJ8WQ4v4aKR9ck_UBP3olw
+  excerpt: How perceptual weighting, phase supervision, and stereo-aware objectives inform high-fidelity
+    music reconstruction.
+- title: Fourier is Frontier：高保真音乐建模在频域上的十万个为什么
+  source: 语音之家 · WeChat (Chinese)
+  url: https://mp.weixin.qq.com/s/wEz7t0p7IABgwFP6pzl4xQ
+  excerpt: Frequency-domain music modeling with complex STFT representations, frequency-aware activations,
+    and perceptually guided refinement.

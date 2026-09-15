@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Kangdi Wang — Independent Audio AI Researcher & Builder
-description: Independent Audio AI researcher and builder — now interning with the Qwen Team. Neural audio representations, generative music modeling, and high-fidelity sound synthesis.
+title: Audio AI Research & Engineering
+description: Kangdi Wang — perceptual audio models, music generation, and audio engineering. First-author research on εar-VAE and ear-VAE2; research intern at Qwen Omni.
 ---
 
 {% assign profile = site.data.profile %}
@@ -29,7 +29,8 @@ description: Independent Audio AI researcher and builder — now interning with 
         <p class="hero-bio">{{ profile.bio_short }}</p>
         <p class="hero-tagline">{{ profile.tagline }}</p>
         <div class="hero-links">
-          <a class="u-link" href="mailto:{{ profile.email }}">{{ profile.email }}</a>
+          <a class="u-link" href="{{ '/cv/' | relative_url }}">Experience &amp; CV</a>
+          <a class="u-link" href="mailto:{{ profile.email }}">Contact</a>
           <a class="u-link" href="{{ profile.links.github }}">GitHub · DDDPG</a>
           <a class="u-link" href="{{ profile.links.lab }}">εar-LAB</a>
           <a class="u-link" href="{{ profile.links.scholar }}">Google Scholar</a>
@@ -43,24 +44,11 @@ description: Independent Audio AI researcher and builder — now interning with 
   </div>
 </section>
 
-<!-- ============ SIGNAL LOG ============ -->
-<section class="spec-section" id="log">
-  <div class="wrap spec-grid">
-    <aside class="spec-rail">
-      <span class="rail-index">01</span>
-      <span class="rail-label">Signal Log</span>
-    </aside>
-    <div class="spec-body">
-      {% include signal-log.html limit=4 %}
-    </div>
-  </div>
-</section>
-
 <!-- ============ SELECTED RESEARCH ============ -->
 <section class="spec-section" id="works">
   <div class="wrap spec-grid">
     <aside class="spec-rail">
-      <span class="rail-index">02</span>
+      <span class="rail-index">01</span>
       <span class="rail-label">Selected<br>Research</span>
     </aside>
     <div class="spec-body">
@@ -92,7 +80,7 @@ description: Independent Audio AI researcher and builder — now interning with 
 <section class="spec-section" id="projects">
   <div class="wrap spec-grid">
     <aside class="spec-rail">
-      <span class="rail-index">03</span>
+      <span class="rail-index">02</span>
       <span class="rail-label">Open Source<br>Projects</span>
     </aside>
     <div class="spec-body">
@@ -104,6 +92,18 @@ description: Independent Audio AI researcher and builder — now interning with 
         </div>
       </div>
       <p class="section-outlet"><a class="u-link" href="{{ '/projects/' | relative_url }}">All tools &amp; projects →</a></p>
+    </div>
+  </div>
+</section>
+<!-- ============ SIGNAL LOG ============ -->
+<section class="spec-section" id="log">
+  <div class="wrap spec-grid">
+    <aside class="spec-rail">
+      <span class="rail-index">03</span>
+      <span class="rail-label">Signal Log</span>
+    </aside>
+    <div class="spec-body">
+      {% include signal-log.html limit=4 %}
     </div>
   </div>
 </section>
